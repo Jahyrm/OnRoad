@@ -700,13 +700,8 @@ public class MainActivity extends AppCompatActivity
                 }
             };
             locationEngine.addLocationEngineListener(locationEngineListener);
-            if (conAlerta) {
-                fab3.setImageResource(R.drawable.ic_my_location_24dp);
-                fab3.setLabelText(getString(R.string.mostrar_ubicacion));
-            } else {
-                fab3.setImageResource(R.drawable.ic_location_disabled_24dp);
-                fab3.setLabelText(getString(R.string.ocultar_ubicacion));
-            }
+            fab3.setImageResource(R.drawable.ic_location_disabled_24dp);
+            fab3.setLabelText(getString(R.string.ocultar_ubicacion));
         } else {
             fab3.setImageResource(R.drawable.ic_my_location_24dp);
             fab3.setLabelText(getString(R.string.mostrar_ubicacion));
