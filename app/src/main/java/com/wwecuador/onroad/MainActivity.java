@@ -164,6 +164,7 @@ public class MainActivity extends AppCompatActivity
         }
         
         if (conAlerta){
+            fab3.setImageResource(R.drawable.ic_my_location_24dp);
             fab3.setLabelText(getString(R.string.mostrar_ubicacion));
         }
 
