@@ -162,11 +162,6 @@ public class MainActivity extends AppCompatActivity
         } else {
             conAlerta = false;
         }
-        
-        if (conAlerta){
-            fab3.setImageResource(R.drawable.ic_my_location_24dp);
-            fab3.setLabelText(getString(R.string.mostrar_ubicacion));
-        }
 
         header = ((NavigationView)findViewById(R.id.nav_view)).getHeaderView(0);
         profilePhoto = ((CircleImageView) header.findViewById(R.id.profileImageView));
@@ -584,7 +579,11 @@ public class MainActivity extends AppCompatActivity
         locationEngine.addLocationEngineListener(locationEngineListener);
         // Enable the location layer on the map and track the user location until they perform a
         // map gesture.
-        map.setMyLocationEnabled(true);
+        if (!conAlerta){
+            map.setMyLocationEnabled(true);
+            fab3.setImageResource(R.drawable.ic_my_location_24dp);
+            fab3.setLabelText(getString(R.string.mostrar_ubicacion));
+        }
         map.getTrackingSettings().setMyLocationTrackingMode(MyLocationTracking.TRACKING_FOLLOW);
     } // End setInitialCamera
 
