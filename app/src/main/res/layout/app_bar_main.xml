@@ -147,7 +147,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_my_location_24dp"
-            fab:fab_label="@string/mostrar_ubicacion"
+            fab:fab_label="@string/ocultar_ubicacion"
             style="@style/MenuButtonsSmall.Green" />
 
     </com.github.clans.fab.FloatingActionMenu>
