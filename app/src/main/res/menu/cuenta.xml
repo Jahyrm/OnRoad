@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cuenta">
+    <item
+        android:id="@+id/edit_account"
+        android:title="@string/edit"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/delete_account"
+        android:title="@string/delete_account"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/edit_action"
+        android:title="@string/just_edit"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/delete_action"
+        android:visible="false"
+        android:title="@string/just_delete"
+        app:showAsAction="never" />
+    <item
+        android:visible="false"
+        android:id="@+id/cancel_action"
+        android:title="@string/cancel"
+        app:showAsAction="never" />
+
+</menu>

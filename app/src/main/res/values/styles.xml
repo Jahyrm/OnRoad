@@ -1,0 +1,205 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme.
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!- Customize your theme here.
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" /> -->
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/material_gray_900</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@android:color/black</item>
+        <item name="colorButtonNormal">@color/material_green_500</item>
+        <item name="android:textColor">@color/text_default_material_dark_primary</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/drawer_list_selector</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <!-- Light.DarkActionBar specific -->
+    </style>
+
+    <!-- ToolBar -->
+    <style name="ThemeOverlay.AppCompat.navTheme">
+
+        <!-- Color of text and icon when SELECTED
+        <item name="colorPrimary">@android:color/white</item> -->
+
+        <!-- Background color when SELECTED -->
+        <item name="colorControlHighlight">@android:color/darker_gray</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!--
+        <item name="android:textColorPrimary">TITLE_COLOR_GOES_HERE</item>
+        <item name="android:textColorSecondary">SUBTITLE_COLOR_GOES_HERE</item>
+        -->
+        <item name="android:colorBackground">@color/material_gray_850</item>
+        <item name="android:textColorPrimary">@color/text_default_material_dark_primary</item>
+        <item name="android:textColor">@color/text_default_material_dark_primary</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/text_default_material_dark_primary</item>
+        <item name="android:colorBackground">@color/material_gray_850</item>
+        <!-- <item name="colorControlActivated">@android:color/darker_gray</item> -->
+        <item name="colorControlHighlight">@android:color/darker_gray</item>
+    </style>
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+
+    <style name="PurpleTheme" parent="FirebaseUI">
+        <item name="colorPrimary">@color/material_deep_purple_500</item>
+        <item name="colorPrimaryDark">@color/material_deep_purple_700</item>
+        <item name="colorAccent">@color/material_lime_a700</item>
+        <item name="colorControlNormal">@color/material_deep_purple_500</item>
+        <item name="colorControlActivated">@color/material_deep_purple_a200</item>
+        <item name="colorControlHighlight">@color/material_lime_a700</item>
+        <item name="android:windowBackground">@color/material_deep_purple_50</item>
+        <item name="android:textColor">@color/material_gray_900</item>
+        <item name="android:textColorPrimary">@color/material_deep_purple_50</item>
+        <item name="colorButtonNormal">@color/material_deep_purple_500</item>
+    </style>
+
+    <style name="GreenTheme" parent="FirebaseUI">
+        <item name="colorPrimary">@color/material_green_500</item>
+        <item name="colorPrimaryDark">@color/material_green_700</item>
+        <item name="colorAccent">@color/material_purple_a700</item>
+        <item name="colorControlNormal">@color/material_green_500</item>
+        <item name="colorControlActivated">@color/material_lime_a700</item>
+        <item name="colorControlHighlight">@color/material_green_a200</item>
+        <item name="android:windowBackground">@color/material_green_50</item>
+        <item name="android:textColor">@color/material_gray_900</item>
+        <item name="android:textColorPrimary">@color/material_deep_purple_50</item>
+        <item name="colorButtonNormal">@color/material_green_500</item>
+    </style>
+
+    <style name="DarkTheme" parent="FirebaseUI">
+        <item name="colorPrimary">@color/material_gray_900</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@android:color/black</item>
+        <item name="colorButtonNormal">@color/material_green_500</item>
+        <item name="android:colorBackground">@color/material_gray_850</item>
+        <item name="android:colorForeground">@android:color/white</item>
+        <!-- <item name="android:textColor">@color/text_default_material_dark_primary</item> -->
+        <item name="android:textColor">@color/text_default_material_light_primary</item>
+        <item name="android:textColorPrimary">@color/text_default_material_dark_primary</item>
+        <item name="android:textColorPrimaryInverse">@color/text_default_material_light_primary</item>
+        <item name="android:textColorSecondary">@color/text_default_material_dark_secondary</item>
+        <item name="android:textColorSecondaryInverse">@color/text_default_material_light_secondary</item>
+        <!-- <item name="android:windowBackground">@color/material_gray_850</item> -->
+        <item name="android:windowBackground">@android:color/darker_gray</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+    </style>
+
+    <style name="DarkThemeInside" parent="DarkTheme">
+        <item name="android:textColor">@color/text_default_material_dark_primary</item>
+        <item name="android:windowBackground">@color/material_gray_850</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+    </style>
+
+    <!-- Style for a tab that displays a category name -->
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+    </style>
+
+    <!-- Text appearance style for a category tab -->
+    <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#A8A19E</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="WarnButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/material_red_a200</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="LoginTheme" parent="FirebaseUI">
+        <item name="colorPrimary">@color/material_gray_900</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="colorButtonNormal">@color/material_green_500</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:windowBackground">@mipmap/bg_login</item>
+        <item name="android:textColorHint">@android:color/black</item>
+    </style>
+
+    <style name="FirebaseUI.Text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="FirebaseUI.Text.Link">
+        <item name="android:textColor">@color/material_green_500</item>
+    </style>
+
+    <style name="FirebaseUI.EditText">
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/black</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="FirebaseUI.Text.TextInputLayout" parent="@style/FirebaseUI.EditText" />
+
+    <style name="FirebaseUI.Text.HintText" parent="@style/FirebaseUI.EditText" />
+
+    <style name="MenuLabelsStyle">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MenuButtonsStyle">
+        <item name="fab_size">mini</item>
+        <item name="fab_showAnimation">@anim/jump_from_down</item>
+        <item name="fab_hideAnimation">@anim/jump_to_down</item>
+        <item name="fab_shadowColor">#444</item>
+        <item name="fab_colorNormal">#FFB805</item>
+        <item name="fab_colorPressed">#F2AB00</item>
+        <item name="fab_colorRipple">#D99200</item>
+    </style>
+
+    <style name="MenuButtonsSmall">
+        <item name="fab_size">mini</item>
+        <item name="fab_colorNormal">#1565C0</item>
+        <item name="fab_colorPressed">#2272CD</item>
+        <item name="fab_colorRipple">#62B2FF</item>
+    </style>
+
+    <style name="MenuButtonsSmall.Green">
+        <item name="fab_colorNormal">#43A047</item>
+        <item name="fab_colorPressed">#2E7D32</item>
+        <item name="fab_colorRipple">#1B5E20</item>
+    </style>
+
+</resources>

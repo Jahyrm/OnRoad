@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">OnRoad</string>
+    <string name="access_token" translatable="false">pk.eyJ1IjoiamFoeXIiLCJhIjoiY2oyN295bHczMDI5NTM3cWk3cHJpYTEweSJ9.0bONCfHg_z3B95QqaMM4VQ</string>
+    <string name="large_text">
+        "© Jahyr Moreno 2017-2018\n\n"
+
+        "© OnRoad\n\n"
+        "OnRoad es la aplicación que gracias a su comunidad de usuarios te alerta de los incidentes "
+        "en tus rutas habituales.\n\n"
+        "Puedes encender el modo gps y ver si encuentras alguna alerta cercana a tu posición,  "
+        "mientras conduces, al entrar en la alerta verás que tan confiable es la alerta en el "
+        "medidor de confianza, así como también te permite votar positiva o negativamente la alerta,"
+        " indicado si es correcta o icorrecta, modificado así su nivel de confianza.\n También "
+        "puedes hacer click en el nombre de la persona que envió la alerta para ver su perfil y "
+        "reputación.\n\n  Si tienes informacicón también puedes optar enviar una alerta a los demás "
+        "usuarios de OnRoad. Ellos pordrán ver tu alerta en tiempo real y votar por ella.\n "
+        "Esa es la magia de OnRoad.\n\n"
+
+        "Acerca de Jahyr M.\n\n"
+
+        "Soy estudiante de la Universidad de Cuenca y la siguiente aplicación es parte de un proyecto "
+        "realizado para la materia de Programación 3. Se ha utilizado el lenguaje de programación "
+        "Java en el cual se basan las apicaciones Android conjunto con xml. Java es un lenguaje de "
+        "programación orientada a objetos.\n\n "
+        "Puedes ponerte en contacto conmigo para sugerencias, cometarios y demás asuntos sobre la "
+        "aplicación en las siguientes direcciones de correo, electrónico:\n\n"
+        "jahyr11@hotmail.com\njahyrmoreno@gmail.com\njahyr.moreno@ucuenca.ec\n\n"
+
+        "Recursos.\n\n"
+
+        "La siguiente apalicación utiliza recursos web para su correcto cfuncionamiento, entre ellos:"
+        "\n\n- Map Mapbox:\nhttps://www.mapbox.com/\n\n- Firebase de Google\n"
+        "https://firebase.gogole.com\n\n- Facebook SDK for login\n"
+        "https://developers.facebook.com/docs/facebook\n\n- CircleImageView by  hdodenhof\n"
+        "https://github.com/hdodenhof/CircleImageView\n\n- FloatingActionButton by Clans\n"
+        "https://github.com/Clans/FloatingActionButton\n\nEstos recursos son libres y gratis lo que "
+        "convierte también a OnRoad como software libre.\nSu código se puede encontrar en un "
+        "repositorio github: \nhttps://github.com/Jahyrm/OnRoad\n\nGracias."
+    </string>
+    <string name="action_settings">Ajustes</string>
+
+    <string name="navigation_drawer_open">Abrir el cajón de navegación</string>
+    <string name="navigation_drawer_close">Cerrar el cajón de navegación</string>
+
+    <!-- ... -->
+    <string name="facebook_app_id" translatable="false">663025657242026</string>
+    <string name="facebook_application_id" translatable="false">663025657242026</string>
+    <!-- Facebook Application ID, prefixed by 'fb'.  Enables Chrome Custom tabs. -->
+    <string name="facebook_login_protocol_scheme" translatable="false">fb663025657242026</string>
+
+    <!-- Common -->
+    <string name="default_toolbar_title">@string/app_name</string>
+    <string name="progress_dialog_loading">Cargando…</string>
+    <string name="sign_in_default">Ingresar</string>
+    <string name="general_error">Ha ocurrido un error.</string>
+
+    <!-- Provider -->
+    <string name="idp_name_google">Google</string>
+    <string name="idp_name_facebook">Facebook</string>
+    <string name="idp_name_twitter">Twitter</string>
+
+    <!-- Auth method picker -->
+    <string name="sign_in_with_google">Ingresar con Google</string>
+    <string name="sign_in_with_facebook">Igresar con Facebook</string>
+    <string name="sign_in_with_twitter">Ingresar con Twitter</string>
+    <string name="sign_in_with_email">Ingresar con correo electrónico</string>
+
+    <!-- Email common-->
+    <string name="next_default">Siguiente</string>
+    <string name="email_hint">Correo electrónico</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="required_field">No puedes dejar esto vacío.</string>
+    <string name="invalid_email_address">Esa dirección de correo electrónico no es correcta.</string>
+    <string name="missing_email_address">Ingresa tu dirección de correo electronico para continuar</string>
+    <string name="progress_dialog_checking_accounts">Comprobando cuentas existentes…</string>
+
+    <!-- Email sign up -->
+    <string name="title_register_email">Registrarse</string>
+    <string name="name_hint">Nombre &amp; apellido</string>
+    <string name="button_text_save">Guardar</string>
+    <string name="progress_dialog_signing_up">Registrándose…</string>
+    <plurals name="error_weak_password">
+        <item quantity="one">La contraseña no es lo suficientemente fuerte. Utiliza al menos %1$d caracter y una combinación de letras y números.</item>
+        <item quantity="other">La contraseña no es lo suficientemente fuerte. Utiliza al menos %1$d caracteres y una combinación de letras y números.</item>
+    </plurals>
+    <string name="email_account_creation_error">Registro de cuenta de correo electrónico sin éxito.</string>
+    <string name="error_user_collision">Ya existe una cuenta con esa dirección de correo electrónico.</string>
+    <string name="create_account_preamble">"Haciendo click en GUARDAR indicas que estás de acuerdo con los "</string>
+    <string name="terms_of_service">Términos de Servicio</string>
+
+    <!-- Idp/Email welcome back -->
+    <string name="title_welcome_back_idp_prompt" translatable="false">@string/sign_in_default</string>
+    <string name="title_welcome_back_password_prompt" translatable="false">@string/sign_in_default</string>
+    <string name="welcome_back_idp_header">Ya tienes una cuenta</string>
+    <string name="welcome_back_email_header">Bienvenido de nuevo!</string>
+    <string name="welcome_back_idp_prompt" translatable="false">
+        Ya has usado <xliff:g example="jane.doe@example.com" id="email_addr">%1$s</xliff:g>.
+        Ingresa con <xliff:g example="Google" id="provider_name">%2$s</xliff:g> para continuar.
+    </string>
+    <string name="welcome_back_password_prompt_body" translatable="false">
+        Ya has utilizado <xliff:g example="jane.doe@example.com" id="email_addr">%1$s</xliff:g>
+        para ingresar. Ingresa tu contraseña para esa cuenta.
+    </string>
+    <string name="progress_dialog_signing_in">Ingresando…</string>
+    <string name="trouble_signing_in">¿Problemas ingresando?</string>
+
+    <!-- Password recovery -->
+    <string name="title_recover_password_activity">Recuperar contraseña</string>
+    <string name="title_confirm_recover_password">Verifica tu correo electrónico</string>
+    <string name="password_recovery_body">Obtén las instrucciones enviadas a este correo electrónico
+        que explican como reiniciar tu contraseña.</string>
+    <string name="button_text_send">Enviar</string>
+    <string name="confirm_recovery_body">Sigue las intrucciones enviaadas a %1$s para recuperar tu contraseña.</string>
+    <string name="progress_dialog_sending">Enviando…</string>
+    <string name="error_email_does_not_exist">Esa dirección de correo electrónico no coincide con ninguna cuenta existente.</string>
+
+    <!-- accessibility -->
+    <string name="accessibility_logo">Logo de la app</string>
+
+    <string name="sign_out">Salir</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="inicio">Inicio</string>
+    <string name="mi_perfil">Cuenta</string>
+    <string name="enviar_alerta">Enviar Alerta</string>
+    <string name="alertas">Alertas</string>
+    <string name="comunicacion">Comunicacion</string>
+    <string name="contacto">Contacto</string>
+    <string name="creditos">Créditos</string>
+    <string name="salir">Desconectarse</string>
+    <string name="username">Usuario:</string>
+    <string name="email">E-mail:</string>
+    <string name="puntos">Puntos:</string>
+    <string name="reputacion">Reputación:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- MainActivity -->
+    <string name="origen">Buscar Origen</string>
+    <string name="destino">Buscar Destino</string>
+    <string name="origen_title">Origen</string>
+    <string name="destination_title">Destino</string>
+    <string name="explorar">Navegar nuevamente</string>
+    <string name="agregar_alerta">Agregar alerta</string>
+    <string name="mostrar_ubicacion">Mostrar mi ubicación</string>
+    <string name="ocultar_ubicacion">Ocultar ubicación</string>
+    <string name="iniciado_sesion">Has iniciado sesión correctamente</string>
+    <string name="necesita_explicacion">Esta aplicación necesita permisos de ubicación para mostrar su funcionalidad.</string>
+    <string name="sin_permisos">No concediste permisos de ubicación.</string>
+    <string name="distance">Distancia: </string>
+    <string name="ruta_tiene">La ruta tiene </string>
+    <string name="metros_de_largo"> metros de largo.</string>
+
+
+
+    <!-- PickerActivity> -->
+    <string name="select_location">Seleccionar Ubicación</string>
+    <!--Move map instruction for toast-->
+    <string name="move_map_instruction">Mueve el mapa para ubicar\nel marcador en la posición deseada.</string>
+    <string name="title_activity_sen_alert">Enviar Alerta</string>
+
+    <!-- Enviado Alerta -->
+    <string name="tipo_de_alerta">Tipo de Alerta</string>
+    <string name="cantidad">Cantidad:</string>
+    <string name="direccion">Dirección:</string>
+    <string name="calles_obligatorio">Calles (Obligatorio)</string>
+    <string name="titulo">Título:</string>
+    <string name="descripcion">Descripción:</string>
+    <string name="optional">(Opcional)</string>
+
+    <!-- Tipos de Alerta -->
+    <string name="trafico">Tráfico</string>
+    <string name="accidente">Accidente</string>
+    <string name="desvio">Desvío</string>
+    <string name="bache">Bache</string>
+    <string name="control_policial">Control Policial</string>
+    <string name="leve">Leve</string>
+    <string name="moderado">Moderado</string>
+    <string name="denso">Denso</string>
+    <string name="direction_empty">La dirección no puede estar vacía.</string>
+    <string name="alerta_enviada">Alerta enviada correctamente.</string>
+    <string name="alerta_editada">Alerta editada correctamente.</string>
+    <string name="t1">Tráfico Leve</string>
+    <string name="t2">Tráfico Moderado</string>
+    <string name="t3">Tráfico Denso</string>
+    <string name="t4">Accidente</string>
+    <string name="t5">Desvío</string>
+    <string name="t6">Vía en mal estado</string>
+    <string name="t7">Control Policial</string>
+    <string name="t8">Error</string>
+    <string name="errorUno">No se ha podido ontener tu dirección.</string>
+    <string name="errorDos">Revisa si tienes activado el GPS.</string>
+
+    <!-- CuentaActivity -->
+    <string name="send">Enviar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="new_pass">Nueva Contraseña:</string>
+    <string name="new_pass_dos">Repite la Nueva Contraseña:</string>
+    <string name="edit">Editar Perfil</string>
+    <string name="perfil_de_usuario">Perfil de Usuario</string>
+    <string name="just_edit">Editar</string>
+    <string name="delete_account">Eliminar Cuenta</string>
+    <string name="just_delete">Eliminar</string>
+    <string name="complete_action_using">Completar acción usando…</string>
+    <string name="email_invalido">El email ingresado no es correcto.</string>
+    <string name="pass_invalido">La contraseña debe contener, 1 Mayúscula, 1 Minúscula y 1 Número.</string>
+    <string name="pass_same">La contraseña no coincide.</string>
+    <string name="deja_en_blanco">(Dejar en blanco para no cambiar)</string>
+    <string name="datos_editados">Datos editados correctamente.</string>
+    <string name="delete_dialog_msg">Está seguro que desea eliminar su cuenta?\nEsta acción no se puede deshacer.</string>
+    <string name="delete_snackbar_msg">Tus puntos se perderán.</string>
+    <string name="no_results">No hay resultados</string>
+    <string name="far">Estás muy lejos de tu ubicación.\nElige otro punto.</string>
+
+    <!--Página de alertas -->
+    <string name="no_desc">No existe descripción.</string>
+
+    <!-- Editando/Eliminando/Votando Alertas -->
+    <string name="eliminar_alerta">Estás seguro que deseas eliminar esta alerta?\nLos cambios no se pueden deshacer.</string>
+    <string name="has_votado">Ya has votado por esta alerta.</string>
+    <string name="alerta_eliminada">Alerta eliminada correctamente.</string>
+    <string name="has_votado_correctamente">Has votado correctamente.</string>
+    <string name="enviada_por">Eviada por:</string>
+    <string name="confianza">Confianza:</string>
+
+    <!-- Lista de alertas -->
+    <string name="all_alerts">Todas</string>
+    <string name="near_alerts">Cercanas</string>
+    <string name="mine_alerts">Mías</string>
+    <string name="no_location">Lo sentimos no hemos podido recibir tu ubicación.</string>
+
+    <!-- Títulos de Activities -->
+    <string name="title_activity_cuenta">Cuenta</string>
+    <string name="title_picker_activity">Enviar Alerta</string>
+    <string name="title_editalert_activity">Editar Alerta</string>
+    <string name="title_perfil_activity">Perfil</string>
+    <string name="title_contact_activity">Contacto</string>
+    <string name="title_alertas">Alertas</string>
+    <string name="title_alerta">Alerta</string>
+
+</resources>

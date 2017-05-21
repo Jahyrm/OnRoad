@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wwecuador.onroad">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PickerActivity"
+            android:label="@string/title_picker_activity" />
+        <activity
+            android:name=".SendAlertActivity"
+            android:label="@string/title_picker_activity"
+            android:parentActivityName=".PickerActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".CuentaActivity"
+            android:label="@string/title_activity_cuenta"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".AlertActivity"
+            android:label="@string/title_alerta" />
+        <activity
+            android:name=".EditAlertActivity"
+            android:label="@string/title_editalert_activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PerfilActivity"
+            android:label="@string/title_perfil_activity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".AlertsListActivity"
+            android:label="@string/title_alertas"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ContactoActivity"
+            android:label="@string/title_contact_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

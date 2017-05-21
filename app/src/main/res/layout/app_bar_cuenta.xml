@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wwecuador.onroad.CuentaActivity" >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/clickable"
+        android:layout_width="116dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="120dp"
+        android:foreground="@drawable/ripple"
+        android:focusable="true"
+        android:clickable="true">
+        <ImageView
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/transparente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_gray_850"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.wwecuador.onroad.CuentaActivity"
+        tools:showIn="@layout/app_bar_cuenta">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="@+id/linearLayout"
+                    app:layout_constraintLeft_toLeftOf="@+id/linearLayout"
+                    app:layout_constraintHorizontal_bias="0.645"
+                    app:layout_constraintTop_toTopOf="@+id/linearLayout"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+                    app:layout_constraintVertical_bias="0.633"
+                    android:id="@+id/uploadImage"
+                    android:layout_width="41dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/magnitude_circle"
+                    android:src="@drawable/ic_file_upload_black_24dp"/>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="116dp"
+                                android:layout_height="100dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="16dp"
+                                app:civ_border_color="@color/tw__solid_white"
+                                app:civ_border_width="2dp"
+                                android:src="@drawable/anon_user_48dp"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="114dp"
+                        android:layout_height="26dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/mi_perfil"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TableLayout
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingTop="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_row_3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingLeft="15dp"
+                            android:text="@string/username"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edittext_username"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:enabled="false"
+                            android:fontFamily="monospace"
+                            android:text="@string/username" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_row_3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingLeft="15dp"
+                            android:text="@string/email"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edittext_email"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:enabled="false"
+                            android:fontFamily="monospace"
+                            android:text="@string/email" />
+                    </TableRow>
+
+                    <TableRow
+                        android:visibility="gone"
+                        android:id="@+id/row_new_pass_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_row_2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:gravity="left|center"
+                            android:paddingLeft="9dp"
+                            android:text="@string/new_pass"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/new_pass_one"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/deja_en_blanco"
+                            android:layout_weight="2"
+                            android:text="" />
+                    </TableRow>
+
+                    <TableRow
+                        android:visibility="gone"
+                        android:id="@+id/row_new_pass_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_row_2">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="9dp"
+                            android:text="@string/new_pass_dos" />
+
+                        <EditText
+                            android:id="@+id/new_pass_two"
+                            android:layout_width="0dp"
+                            android:hint="@string/deja_en_blanco"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_puntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_row_3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingLeft="15dp"
+                            android:text="@string/puntos"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/puntosEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:fontFamily="monospace"
+                            android:gravity="center_vertical"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_reputation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_row_3">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingLeft="15dp"
+                            android:text="@string/reputacion"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/reputationImage"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:src="@drawable/reputatiometer_bg"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="8dp">
+                <Button
+                    android:id="@+id/aceptar_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/material_green_500"
+                    android:text="@string/just_edit"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textColor="@android:color/white"/>
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cancel"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:background="@android:color/black"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_edit"
+        tools:ignore="VectorDrawableCompat"
+        app:backgroundTint="@color/material_green_500"/>
+
+</android.support.design.widget.CoordinatorLayout>

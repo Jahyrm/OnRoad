@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "895211776704",
+    "firebase_url": "https://onroad-3cdc4.firebaseio.com",
+    "project_id": "onroad-3cdc4",
+    "storage_bucket": "onroad-3cdc4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895211776704:android:1427b0f9fcd0ff0a",
+        "android_client_info": {
+          "package_name": "com.wwecuador.onroad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895211776704-meg89a9crgmklh184094ds9ro9nncn9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeIdTeP4IoDvobzQPCdjMyJs50cz2Ttjc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

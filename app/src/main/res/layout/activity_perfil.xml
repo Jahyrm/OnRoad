@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wwecuador.onroad.PerfilActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_gray_850"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.wwecuador.onroad.CuentaActivity"
+        tools:showIn="@layout/app_bar_cuenta">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:id="@+id/foto"
+                            android:layout_width="116dp"
+                            android:layout_height="100dp"
+                            app:civ_border_color="@color/tw__solid_white"
+                            app:civ_border_width="2dp"
+                            android:src="@drawable/anon_user_48dp" />
+
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="216dp"
+                        android:layout_height="28dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/perfil_de_usuario"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TableLayout
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingTop="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_row_3">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingLeft="15dp"
+                            android:text="@string/username"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/username"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:enabled="false"
+                            android:fontFamily="monospace"
+                            android:text="@string/username"
+                            android:textColor="@color/colorPrimaryLight" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_row_3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingLeft="15dp"
+                            android:text="@string/email"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/email"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:enabled="false"
+                            android:fontFamily="monospace"
+                            android:text="@string/email"
+                            android:textColor="@color/colorPrimaryLight"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_puntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_row_3">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingLeft="15dp"
+                            android:text="@string/puntos"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/puntos"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:fontFamily="monospace"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorPrimaryLight"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_reputation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_row_3">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingLeft="15dp"
+                            android:text="@string/reputacion"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/reputacion"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:src="@drawable/reputatiometer_bg"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

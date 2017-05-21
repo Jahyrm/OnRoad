@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/inicio" />
+        <item
+            android:id="@+id/nav_cuenta"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="@string/mi_perfil" />
+        <item
+            android:id="@+id/nav_enviar_alerta"
+            android:icon="@drawable/ic_add_location_black_24dp"
+            android:title="@string/enviar_alerta" />
+        <item
+        android:id="@+id/nav_alertas"
+        android:icon="@drawable/ic_warning_black_24dp"
+        android:title="@string/alertas" />
+
+        <item
+            android:id="@+id/nav_salir"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/salir" />
+    </group>
+
+    <item android:title="@string/comunicacion">
+        <menu>
+            <item
+                android:id="@+id/nav_contanto"
+                android:icon="@drawable/ic_email_black_24dp"
+                android:title="@string/contacto" />
+        </menu>
+    </item>
+
+</menu>
