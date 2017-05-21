@@ -206,6 +206,7 @@ public class AlertasCercanasFragment extends Fragment {
                             Alert alerta = alertas.get(position);
                             Intent intent = new Intent(getActivity(), MainActivity.class);
                             intent.putExtra("alerta", alerta);
+                            getActivity().finish();
                             startActivity(intent);
                         }
                     });
