@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity
     private double lng;
     private double userLat;
     private double userLng;
+    private boolean conAlerta;
 
     //Instacias de Android
     View header;
@@ -152,14 +153,19 @@ public class MainActivity extends AppCompatActivity
         Bundle extras = intent.getExtras();
         if (extras != null) {
             if (extras.containsKey("alerta")) {
+                conAlerta = true;
                 alertaConZoom = (Alert) getIntent().getExtras().getSerializable("alerta");
                 lat = alertaConZoom.getLatitud();
                 lng = alertaConZoom.getLongitud();
                 zoom = true;
             }
+        } else {
+            conAlerta = false;
         }
-
-
+        
+        if (conAlerta){
+            fab3.setLabelText(getString(R.string.mostrar_ubicacion));
+        }
 
         header = ((NavigationView)findViewById(R.id.nav_view)).getHeaderView(0);
         profilePhoto = ((CircleImageView) header.findViewById(R.id.profileImageView));
@@ -694,8 +700,13 @@ public class MainActivity extends AppCompatActivity
                 }
             };
             locationEngine.addLocationEngineListener(locationEngineListener);
-            fab3.setImageResource(R.drawable.ic_location_disabled_24dp);
-            fab3.setLabelText(getString(R.string.ocultar_ubicacion));
+            if (conAlerta) {
+                fab3.setImageResource(R.drawable.ic_my_location_24dp);
+                fab3.setLabelText(getString(R.string.mostrar_ubicacion));
+            } else {
+                fab3.setImageResource(R.drawable.ic_location_disabled_24dp);
+                fab3.setLabelText(getString(R.string.ocultar_ubicacion));
+            }
         } else {
             fab3.setImageResource(R.drawable.ic_my_location_24dp);
             fab3.setLabelText(getString(R.string.mostrar_ubicacion));
