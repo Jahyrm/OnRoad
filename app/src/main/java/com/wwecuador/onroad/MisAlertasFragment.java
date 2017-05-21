@@ -32,7 +32,7 @@ public class MisAlertasFragment extends Fragment {
     User usuario;
     private FirebaseDatabase mFirebaseDatabase;
     private DatabaseReference mAlertsDatabaseReference;
-    private ChildEventListener mListenerDeAlertas;
+    private ChildEventListener mListenerDeAlertas3;
 
     //Create an arrayList (Casi Pila) de Alertas
     final ArrayList<Alert> alertas = new ArrayList<Alert>();
@@ -52,10 +52,10 @@ public class MisAlertasFragment extends Fragment {
         mAlertsDatabaseReference = mFirebaseDatabase.getReference().child("alerts");
 
 
-        if (mListenerDeAlertas == null) {
+        if (mListenerDeAlertas3 == null) {
             Log.v("AllAlertsFragment", "PROBANDO: O AQUÍ?");
             //Verificador de cambios en la base de datos. Debajo de usuarios.
-            mListenerDeAlertas = new ChildEventListener() {
+            mListenerDeAlertas3 = new ChildEventListener() {
                 //En todos estos métodos recibo un parámeto con la información actual.
                 @Override
                 public void onChildAdded(DataSnapshot dataSnapshot, String s) {
@@ -93,7 +93,7 @@ public class MisAlertasFragment extends Fragment {
                 }
             };
             //Aquí estoy vinculando el listener a una refencia específica.
-            mAlertsDatabaseReference.addChildEventListener(mListenerDeAlertas);
+            mAlertsDatabaseReference.addChildEventListener(mListenerDeAlertas3);
             mAlertsDatabaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
@@ -130,10 +130,10 @@ public class MisAlertasFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        if (mListenerDeAlertas != null){
-            mAlertsDatabaseReference.removeEventListener(mListenerDeAlertas);
+        if (mListenerDeAlertas3 != null){
+            mAlertsDatabaseReference.removeEventListener(mListenerDeAlertas3);
             alertas.clear();
-            mListenerDeAlertas = null;
+            mListenerDeAlertas3 = null;
         }
     }
 }
