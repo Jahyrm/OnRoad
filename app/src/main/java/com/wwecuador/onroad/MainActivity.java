@@ -836,7 +836,7 @@ public class MainActivity extends AppCompatActivity
 
     private void attachDatabaseReadListener(){
 
-        if (mListenerDeUsuarios == null) {
+        //if (mListenerDeUsuarios == null) {
             //Verificador de cambios en la base de datos. Debajo de usuarios.
             mListenerDeUsuarios = new ChildEventListener() {
                 //En todos estos métodos recibo un parámeto con la información actual.
@@ -904,7 +904,7 @@ public class MainActivity extends AppCompatActivity
                 @Override
                 public void onCancelled(DatabaseError databaseError) {}
             });
-        }
+        //}
 
         if (mListenerDeAlertas == null) {
             //Verificador de cambios en la base de datos. Debajo de usuarios.
