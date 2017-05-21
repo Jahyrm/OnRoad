@@ -247,6 +247,8 @@ public class MainActivity extends AppCompatActivity
                             .tilt(30) // Set the camera tilt
                             .build(); // Creates a CameraPosition from the builder
                     map.animateCamera(CameraUpdateFactory.newCameraPosition(position), 7000);
+                    fab3.setImageResource(R.drawable.ic_my_location_24dp);
+                    fab3.setLabelText(getString(R.string.mostrar_ubicacion));
                 }
 
                 /*map.setOnMarkerClickListener(new MapboxMap.OnMarkerClickListener() {
@@ -579,11 +581,7 @@ public class MainActivity extends AppCompatActivity
         locationEngine.addLocationEngineListener(locationEngineListener);
         // Enable the location layer on the map and track the user location until they perform a
         // map gesture.
-        if (!conAlerta){
-            map.setMyLocationEnabled(true);
-            fab3.setImageResource(R.drawable.ic_my_location_24dp);
-            fab3.setLabelText(getString(R.string.mostrar_ubicacion));
-        }
+        map.setMyLocationEnabled(true);
         map.getTrackingSettings().setMyLocationTrackingMode(MyLocationTracking.TRACKING_FOLLOW);
     } // End setInitialCamera
 
