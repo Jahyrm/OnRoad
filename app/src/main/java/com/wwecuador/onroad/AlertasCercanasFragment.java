@@ -46,7 +46,7 @@ public class AlertasCercanasFragment extends Fragment {
     private double longitud;
     private FirebaseDatabase mFirebaseDatabase;
     private DatabaseReference mAlertsDatabaseReference;
-    private ChildEventListener mListenerDeAlertas;
+    private ChildEventListener mListenerDeAlertas2;
     private FirebaseRemoteConfig mFirebaseRemoteConfig;
 
     //Create an arrayList (Casi Pila) de Alertas
@@ -88,9 +88,9 @@ public class AlertasCercanasFragment extends Fragment {
         fetchConfig();
 
 
-        if (mListenerDeAlertas == null) {
+        if (mListenerDeAlertas2 == null) {
             //Verificador de cambios en la base de datos. Debajo de usuarios.
-            mListenerDeAlertas = new ChildEventListener() {
+            mListenerDeAlertas2 = new ChildEventListener() {
                 //En todos estos métodos recibo un parámeto con la información actual.
                 @Override
                 public void onChildAdded(DataSnapshot dataSnapshot, String s) {
@@ -175,7 +175,7 @@ public class AlertasCercanasFragment extends Fragment {
 
     public void hacerAlgoConLosNuevosValores(){
         RANGE_DISTANCE_VALUE = mFirebaseRemoteConfig.getDouble("rango");
-        mAlertsDatabaseReference.addChildEventListener(mListenerDeAlertas);
+        mAlertsDatabaseReference.addChildEventListener(mListenerDeAlertas2);
         mAlertsDatabaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -219,10 +219,10 @@ public class AlertasCercanasFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        if (mListenerDeAlertas != null){
-            mAlertsDatabaseReference.removeEventListener(mListenerDeAlertas);
+        if (mListenerDeAlertas2 != null){
+            mAlertsDatabaseReference.removeEventListener(mListenerDeAlertas2);
             alertas.clear();
-            mListenerDeAlertas = null;
+            mListenerDeAlertas2 = null;
         }
     }
 }
