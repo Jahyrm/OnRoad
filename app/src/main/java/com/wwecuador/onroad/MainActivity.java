@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity
 
     private boolean mUsuarioExistente = false;
     private boolean mSeguirComprobando =  true;
+    private User mUserTemporal;
     private User mCurrentUser;
     private Alert alertaConZoom;
     private boolean zoom=false;
@@ -856,7 +857,7 @@ public class MainActivity extends AppCompatActivity
                     if (currentUser.getUserId().equals(mCurrentUser.getUserId())) {
                         //Log.v(TAG, "PROBANDO2: " + mUsuarioExistente);
                         mUsuarioExistente = true;
-                        mCurrentUser = currentUser;
+                        mUserTemporal = currentUser;
                         mSeguirComprobando = false;
                         //Log.v(TAG, "PROBANDO2: " + mUsuarioExistente+ " "+mSeguirComprobando);
                     } else {
@@ -899,6 +900,8 @@ public class MainActivity extends AppCompatActivity
                     //Log.v(TAG, "PROBANDO3: " + mUsuarioExistente);
                     if (!mUsuarioExistente) {
                         mUsersDatabaseReference.child(mCurrentUser.getUserId()).setValue(mCurrentUser);
+                    } else {
+                        mCurrentUser = mUserTemporal;
                     }
                 }
                 @Override
