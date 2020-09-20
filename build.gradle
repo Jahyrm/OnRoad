@@ -2,10 +2,11 @@
 
 buildscript {
     repositories {
+        google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.2'
+        classpath 'com.android.tools.build:gradle:4.0.1'
 
         // Add this line
         classpath 'com.google.gms:google-services:3.0.0'
@@ -16,6 +17,7 @@ buildscript {
 
 allprojects {
     repositories {
+        google()
         jcenter()
         maven { url 'https://maven.fabric.io/public' }
     }
